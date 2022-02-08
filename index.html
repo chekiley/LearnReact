@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -14,78 +15,6 @@
         <span class="arrow-4-left"></span>
         <span class="arrow-4-right"></span>
     </div>
-
-
-    <style>
-        .arrow-4 {
-            position: relative;
-            cursor: pointer;
-            margin: 20px;
-            width: 66px;
-            height: 30px;
-        }
-
-        .arrow-4-left {
-            position: absolute;
-            background-color: transparent;
-            top: 10px;
-            left: 0;
-            width: 40px;
-            height: 10px;
-            display: block;
-            transform: rotate(35deg);
-            float: right;
-            border-radius: 2px;
-        }
-
-        .arrow-4-left:after {
-            content: "";
-            background-color: #337AB7;
-            width: 40px;
-            height: 10px;
-            display: block;
-            float: right;
-            border-radius: 6px 10px 10px 6px;
-            transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
-            z-index: -1;
-        }
-
-        .arrow-4-right {
-            position: absolute;
-            background-color: transparent;
-            top: 10px;
-            left: 26px;
-            width: 40px;
-            height: 10px;
-            display: block;
-            transform: rotate(-35deg);
-            float: right;
-            border-radius: 2px;
-        }
-
-        .arrow-4-right:after {
-            content: "";
-            background-color: #337AB7;
-            width: 40px;
-            height: 10px;
-            display: block;
-            float: right;
-            border-radius: 10px 6px 6px 10px;
-            transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
-            z-index: -1;
-        }
-
-        .open .arrow-4-left:after {
-            transform-origin: center center;
-            transform: rotate(-70deg);
-        }
-
-        .open .arrow-4-right:after {
-            transform-origin: center center;
-            transform: rotate(70deg);
-        }
-    </style>
-
     <script src="script.js"></script>
 </body>
 
